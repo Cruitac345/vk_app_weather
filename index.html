@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru" >
+<head>
+  <meta charset="UTF-8">
+  <title>Приложение погода с точными данными</title>
+  <title>Погода</title>
+<script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="wrapper">
+      <div class="sidebar">
+        <div>
+          <form class="search" id="search">
+            <input type="text" id="query" placeholder="Введите город..." />
+            <button><i class="fas fa-search"></i></button>
+          </form>
+          <div class="weather-icon">
+            <img id="icon" src="icons/sun/4.png" alt="" />
+          </div>
+          <div class="temperature">
+            <h1 id="temp">0</h1>
+            <span class="temp-unit">°C</span>
+          </div>
+          <div class="date-time">
+            <p id="date-time">Понедельник, 12:00</p>
+          </div>
+          <div class="divider"></div>
+          <div class="condition-rain">
+            <div class="condition">
+              <i class="fas fa-cloud"></i>
+              <p id="condition">condition</p>
+            </div>
+            <div class="rain">
+              <i class="fas fa-tint"></i>
+              <p id="rain">осадки - 0%</p>
+            </div>
+          </div>
+        </div>
+        <div class="location">
+          <div class="location-icon">
+            <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <div class="location-text">
+            <p id="location">Местоположение</p>
+          </div>
+        </div>
+      </div>
+      <div class="main">
+        <nav>
+          <ul class="options">
+            <button class="hourly">Сейчас</button>
+            <button class="week active">Неделя</button>
+          </ul>
+          <ul class="options units">
+            <button class="celcius active">°C</button>
+            <button class="fahrenheit">°F</button>
+          </ul>
+        </nav>
+        <div class="cards" id="weather-cards"></div>
+        <div class="highlights">
+          <h2 class="heading">Текущая погода</h2>
+          <div class="cards">
+            <div class="card2">
+              <h4 class="card-heading">UV индекс</h4>
+              <div class="content">
+                <p class="uv-index">0</p>
+                <p class="uv-text">Низкий</p>
+              </div>
+            </div>
+            <div class="card2">
+              <h4 class="card-heading">Скорость ветра</h4>
+              <div class="content">
+                <p class="wind-speed">0</p>
+                <p>км/ч</p>
+              </div>
+            </div>
+            <div class="card2">
+              <h4 class="card-heading">Восход & Закат</h4>
+              <div class="content">
+                <p class="sun-rise">0</p>
+                <p class="sun-set">0</p>
+              </div>
+            </div>
+            <div class="card2">
+              <h4 class="card-heading">Влажность</h4>
+              <div class="content">
+                <p class="humidity">0</p>
+                <p class="humidity-status">Normal</p>
+              </div>
+            </div>
+            <div class="card2">
+              <h4 class="card-heading">Видимость</h4>
+              <div class="content">
+                <p class="visibilty">0</p>
+                <p class="visibilty-status">Normal</p>
+              </div>
+            </div>
+            <div class="card2">
+              <h4 class="card-heading">Качество воздуха</h4>
+              <div class="content">
+                <p class="air-quality">0</p>
+                <p class="air-quality-status">Normal</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+  <script  src="./script.js"></script>
+
+</body>
+</html>
